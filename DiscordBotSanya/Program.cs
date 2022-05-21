@@ -8,8 +8,8 @@ namespace DiscordBotSanya
 {
     class Program
     {
-        // flex
-        string f = "sfsd";
+
+        
 
         DiscordSocketClient client = new DiscordSocketClient();
         static void Main(string[] args)
