@@ -216,12 +216,11 @@ namespace DiscordBotSanya
 
             var channels = guild.Channels.Where(x => !(x is ICategoryChannel || x is IVoiceChannel));
             var chan = channels.ToArray();
-            for (int j = 0; j < 3; ++j)
                 for (int i = 0; i < chan.Length; ++i)
                 {
-                    //var chan = channel as ITextChannel;
+                    
                     (chan[i] as ITextChannel).SendMessageAsync("**Оставь надежду всяк сюда входящий.**");
-                    //chan.SendMessageAsync("Оставь надежду всяк сюда входящий.");
+                    
                 }
             return;
         }
